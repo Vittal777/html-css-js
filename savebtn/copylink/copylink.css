@@ -1,0 +1,30 @@
+#link-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body,html{
+    height:100%;
+}
+#farfa{
+cursor: pointer;
+}
+.copied{
+    animation:fadeOut 1s;
+}
+@keyframes fadeOut{
+    from{opacity:1;}
+    to{opacity:0;}
+}
+#copyMessage {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
